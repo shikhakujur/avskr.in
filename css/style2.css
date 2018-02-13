@@ -1,5 +1,5 @@
 html, body {
-  background: url('../images/back.jpg');
+  background: url('../images/layers/bg-100.jpg');
 }
 .parallax {
   perspective: 100px;
@@ -37,24 +37,27 @@ html, body {
   z-index: 2;
 }
 .parallax__layer__0 {
-  transform: translateZ(-300px) scale(4);
+  transform: translateZ(-350px) scale(4.5);
 }
 .parallax__layer__1 {
-  transform: translateZ(-250px) scale(3.5);
+  transform: translateZ(-300px) scale(4.0);
 }
 .parallax__layer__2 {
-  transform: translateZ(-200px) scale(3);
+  transform: translateZ(-250px) scale(3.5);
 }
 .parallax__layer__3 {
-  transform: translateZ(-150px) scale(2.5);
+  transform: translateZ(-200px) scale(3.0);
 }
 .parallax__layer__4 {
-  transform: translateZ(-100px) scale(2);
+  transform: translateZ(-150px) scale(2.5);
 }
 .parallax__layer__5 {
-  transform: translateZ(-50px) scale(1.5);
+  transform: translateZ(-100px) scale(2);
 }
 .parallax__layer__6 {
+  transform: translateZ(-50px) scale(1.5);
+}
+.parallax__layer__7 {
   transform: translateZ(0px) scale(1);
 }
 

@@ -1,9 +1,17 @@
 var typed = new Typed(".type", {
-  strings: ['Aavishkar', 'The Cradle of Innovation'],
-  stringsElement: null,
-  loop: true,
-  loopCount: Infinity,
-  smartBackspace: true // Default value
+  	
+  	strings: ['Aavishkar', 'The Cradle of Innovation'],
+  	stringsElement: null,
+	typeSpeed: 3,
+	startDelay: 1200,
+	backSpeed: 20,
+	backDelay: 500,
+	loop: true,
+	loopCount: Infinity,
+	showCursor: false,
+	cursorChar: "",
+	attr: null,
+	contentType: 'html',
 });
 
 
