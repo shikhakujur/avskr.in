@@ -14,30 +14,28 @@ var typed = new Typed(".type", {
 	contentType: 'html',
 });
 
+var controller = new ScrollMagic.Controller();
 
-// $(function() {
-//   $('a').on('click', function(e) {
-//     e.preventDefault();
-//     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-//   });
-// });
+var scene1_a = new ScrollMagic.Scene({
+	triggerElement: '.content'
+})
+.setClassToggle('.content','visible')
+.addTo(controller);
 
-// $('.menu-burger, .menu-items').on('click', function() {
-//   $('.menu-bg, .menu-items, .menu-burger').toggleClass('fs');
-//   $('.menu-burger').text() == "☰" ? $('.menu-burger').text('✕') : $('.menu-burger').text('☰');
-// });
+var scene1_b = new ScrollMagic.Scene({
+	triggerElement: '.content'
+})
+.setClassToggle('.content','fadeInLeft')
+.addTo(controller);
 
-// $(document).ready(function () {
-//           function rgt() {
-//               $('#clo').animate({ left: "1500" }, 20000, hider);
-//             }
-//             rgt();
-//             function hider() {
-//             $('#clo').css('left', '-2000px');
-//                 rgt();
-//             }
-//         });
+var scene2_a = new ScrollMagic.Scene({
+	triggerElement: '.heading'
+})
+.setClassToggle('.heading','visible')
+.addTo(controller);
 
-// $('body').scroll(function(){
-//   console.log('Hi');
-// })
+var scene2_b = new ScrollMagic.Scene({
+	triggerElement: '.heading'
+})
+.setClassToggle('.heading','shake')
+.addTo(controller);

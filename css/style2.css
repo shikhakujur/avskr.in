@@ -88,6 +88,14 @@ html, body {
     height: 180px;
 }
 
+/*.animate {
+    -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -ms-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+*/
 @media only screen and (max-width: 500px) {
     .type{
         margin-top: 40%;
